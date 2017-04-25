@@ -75,6 +75,9 @@ PL__ASSUME_NONNULL_BEGIN
 /** Pins the given edge of the view to the same edge of its superview. */
 - (NSLayoutConstraint *)autoPinEdgeToSuperviewEdge:(ALEdge)edge;
 
+/** Pins 3 of the 4 edges of the view to the edges of its superview, excluding one edge. */
+- (PL__NSArray_of(NSLayoutConstraint *) *)autoPinEdgesToSuperviewEdgesExcludingEdge:(ALEdge)edge;
+
 /** Pins the given edge of the view to the same edge of its superview with an inset. */
 - (NSLayoutConstraint *)autoPinEdgeToSuperviewEdge:(ALEdge)edge withInset:(CGFloat)inset;
 
