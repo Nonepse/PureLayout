@@ -371,6 +371,22 @@
     return [self autoConstrainAttribute:(ALAttribute)edge toAttribute:(ALAttribute)toEdge ofView:otherView withOffset:offset relation:relation];
 }
 
+#pragma mark Pin Center
+
+/**
+ Pins a center of the view to a given edge of another view with an offset as a maximum or minimum.
+ 
+ @param center The center of this view to pin.
+ @param toEdge The edge of the other view to pin to.
+ @param otherView The other view to pin to. Must be in the same view hierarchy as this view.
+ @param offset The offset between the edge of this view and the edge of the other view.
+ @param relation Whether the offset should be at least, at most, or exactly equal to the given value.
+ @return The constraint added.
+ */
+- (NSLayoutConstraint *)autoPinCenter:(ALCenter)center toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation
+{
+    return [self autoConstrainAttribute:(ALAttribute)center toAttribute:(ALAttribute)toEdge ofView:otherView withOffset:offset relation:relation];
+}
 
 #pragma mark Align Axes
 
