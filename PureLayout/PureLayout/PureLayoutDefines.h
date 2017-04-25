@@ -141,6 +141,14 @@ typedef NS_ENUM(NSInteger, ALAxis) {
     #endif /* PL__PureLayout_MinBaseSDK_iOS_8_0 */
 };
 
+/** Constants that represent center of a view. */
+typedef NS_ENUM(NSInteger, ALCenter) {
+    /** The center along the x-axis of the object’s alignment rectangle. */
+    ALCenterX = NSLayoutAttributeCenterX,
+    /** The center along the y-axis of the object’s alignment rectangle. */
+    ALCenterY = NSLayoutAttributeCenterY,
+};
+
 #if PL__PureLayout_MinBaseSDK_iOS_8_0
 
 /** Constants that represent layout margins of a view. Available in iOS 8.0 and later. */

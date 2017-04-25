@@ -121,6 +121,9 @@ PL__ASSUME_NONNULL_BEGIN
 /** Pins an edge of the view to a given edge of another view with an offset as a maximum or minimum. */
 - (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation;
 
+#pragma mark Pin Center
+
+- (NSLayoutConstraint *)autoPinCenter:(ALCenter)center toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation;
 
 #pragma mark Align Axes
 
